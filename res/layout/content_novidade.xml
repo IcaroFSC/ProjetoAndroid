@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".NovidadeActivity"
+    tools:showIn="@layout/activity_novidade">
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:orientation="horizontal"
+        app:columnCount="2"
+        app:rowCount="4">
+
+        <TextView
+            android:id="@+id/txtTituloNovidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtTituloNovidade"
+            android:textSize="30sp"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <ListView
+            android:id="@+id/lstNovidade"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_column="0"
+            app:layout_row="2"
+            android:dividerHeight="4dp"/>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--app:layout_column="0"-->
+            <!--app:layout_row="3"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<EditText-->
+            <!--android:digits="0123456789"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="CEP"-->
+            <!--android:id="@+id/etMain_cep"-->
+            <!--android:textColor="#595959"-->
+            <!--android:textSize="25sp"-->
+            <!--android:inputType="number"-->
+            <!--android:layout_width="match_parent"/>-->
+
+            <!--<LinearLayout-->
+                <!--android:gravity="center"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent">-->
+
+                <!--<Button-->
+                    <!--android:background="@color/colorPrimary"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/btnMain_buscarCep"-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--android:padding="10dp"-->
+                    <!--android:text="Buscar CEP"-->
+                    <!--android:textColor="#FDFDFD"-->
+                    <!--android:textSize="22sp"-->
+                    <!--android:layout_width="wrap_content"/>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:id="@+id/etMain_resposta"-->
+                <!--android:textColor="#595959"-->
+                <!--android:textSize="20sp"-->
+                <!--/>-->
+
+        <!--</LinearLayout>-->
+
+    </android.support.v7.widget.GridLayout>
+
+</android.support.constraint.ConstraintLayout>

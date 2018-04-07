@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.icaro.myapplication.NoticiaActivity"
+    tools:showIn="@layout/activity_noticia">
+
+    <GridLayout
+        android:id="@+id/gridLayoutNoticia"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:rowCount="7"
+        android:orientation="horizontal"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtTituloNoticia"
+            android:textSize="30sp"
+            android:layout_row="0"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_column="0"
+            android:layout_row="0"/>
+
+        <TextView
+            android:id="@+id/txtTextoNoticia"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:maxLines="15"
+            android:scrollbars="vertical"
+            android:hint="Conteúdo da Notícia" />
+
+        <TextView
+            android:id="@+id/txtNoticia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtTituloComentario"
+            android:textSize="30sp"
+            android:layout_column="0"
+            android:layout_row="2"/>
+
+        <EditText
+            android:id="@+id/edtNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/edtNome"
+            android:layout_column="0"
+            android:layout_row="3"/>
+
+        <EditText
+            android:id="@+id/edtNoticia"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textLongMessage"
+            android:hint="@string/edtComentario"
+            android:layout_column="0"
+            android:layout_row="4"/>
+
+        <ImageButton
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="end"
+            android:layout_row="3"
+            android:contentDescription="@string/btnAdd"
+            app:srcCompat="@android:drawable/ic_input_add" />
+
+        <ListView
+            android:id="@+id/lstComentario"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_row="6"
+            android:scrollbars="vertical"
+            android:dividerHeight="4dp"
+            />
+
+    </GridLayout>
+</android.support.constraint.ConstraintLayout>

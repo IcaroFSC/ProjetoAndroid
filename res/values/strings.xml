@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Blog</string>
+
+    <string name="title_activity_listar_post">ListarPostActivity</string>
+    <string name="conteudoImgPost">Imagem Postagem de Usuários</string>
+    <string name="btnAdd">Botão para adicionar informações, notícias, posts e tutoriais</string>
+    <string name="txtComboPost">Assuntos</string>
+
+    <string name="title_activity_conteudo">ConteudoActivity</string>
+    <string name="txtTituloConteudo">Conteúdo</string>
+
+    <string name="title_activity_post">PostActivity</string>
+    <string name="txtTituloPost">Post</string>
+    <string name="txtPost">Texto do post</string>
+    <string name="txtTituloComentario">Comentário</string>
+    <string name="edtNome">Nome do Usuário</string>
+    <string name="edtComentario">Comentário do Usuário</string>
+
+    <string name="title_activity_inserir_post">InserirPost</string>
+    <string name="txtTituloAssunto">Título</string>
+    <string name="edtTitulo">Título do Assunto</string>
+    <string name="edtConteudo">Conteúdo do Assunto</string>
+    <string name="btnSalvar">Salvar</string>
+    <string name="btnCancelar">Cancelar</string>
+
+    <string name="title_activity_listar_noticia">ListarNoticiaActivity</string>
+    <string name="txtTituloNoticia">Notícias</string>
+    <string name="txtNoticias">Notícias do Dia</string>
+    <string name="title_activity_noticia">NoticiaActivity</string>
+    <string name="txtTituloNoticiaConsultada">NoticiaActivity</string>
+    <string name="txtNoticiaConsultada">NoticiaActivity</string>
+
+    <string name="title_activity_novidade">NovidadeActivity</string>
+    <string name="txtTituloNovidade">Novidades</string>
+    <string name="title_activity_teste_conexao">TesteConexaoActivity</string>
+
+
+</resources>

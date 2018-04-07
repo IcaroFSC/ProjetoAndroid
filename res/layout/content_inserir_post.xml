@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.icaro.myapplication.InserirPost"
+    tools:showIn="@layout/activity_inserir_post">
+
+    <GridLayout
+        android:id="@+id/gridLayoutInserirPost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:rowCount="7">
+
+        <Spinner
+            android:id="@+id/spinLstAssunto"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_rowWeight="0.2" />
+
+        <TextView
+            android:id="@+id/txtTituloAssunto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:text="@string/txtTituloAssunto"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/edtTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:ems="10"
+            android:hint="@string/edtTitulo"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/txtTituloConteudo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="3"
+            android:text="@string/txtTituloConteudo"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/edtConteudo"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_column="0"
+            android:layout_row="4"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/edtConteudo"
+            android:inputType="textPersonName"
+            android:layout_rowWeight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="5"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnCancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnCancelar" />
+
+            <Button
+                android:id="@+id/btnSalvar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnSalvar" />
+
+        </LinearLayout>
+
+    </GridLayout>
+</android.support.constraint.ConstraintLayout>

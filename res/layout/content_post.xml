@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.icaro.myapplication.PostActivity"
+    tools:showIn="@layout/activity_post">
+
+    <GridLayout
+        android:id="@+id/gridLayoutPost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:rowCount="6"
+        android:orientation="horizontal"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtTituloPost"
+            android:layout_row="0"
+            android:textSize="36sp"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="end"
+            android:layout_row="0" />
+
+        <TextView
+            android:id="@+id/txtPost"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:text="@string/txtPost"
+            android:maxLines="15"
+            android:scrollbars="vertical"
+            android:layout_column="0"
+            android:layout_row="1"/>
+
+        <TextView
+            android:id="@+id/txtTituloComentario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtTituloComentario"
+            android:textSize="20sp"
+            android:layout_column="0"
+            android:layout_row="2"/>
+
+        <EditText
+            android:id="@+id/edtNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="3"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/edtNome" />
+
+        <EditText
+            android:id="@+id/edtComentario"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_column="0"
+            android:layout_row="4"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textLongMessage"
+            android:hint="@string/edtComentario" />
+
+        <ImageButton
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="end"
+            android:layout_row="3"
+            android:contentDescription="@string/btnAdd"
+            app:srcCompat="@android:drawable/ic_input_add" />
+
+        <ListView
+            android:id="@+id/lstComentario"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_row="5"
+            android:dividerHeight="4dp"/>
+
+    </GridLayout>
+</android.support.constraint.ConstraintLayout>
